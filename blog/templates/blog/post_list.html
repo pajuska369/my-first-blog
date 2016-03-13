@@ -1,0 +1,19 @@
+<html>
+   <head>
+        <title>Pajinka's blog</title>
+   </head>
+   <body>
+       <div>
+        <h1>Vitajte</h1>
+        <p>Prečítajte si tu všetko zaujímavé</p>
+       </div>
+{% for post in posts %}
+    
+       <div>
+        <h2>{{post.title}}</h2>
+        <p>{{post.text}}</p>
+        <p>Pridané {{post.created_date}}</p>
+       </div>
+{% endfor %}
+   </body>
+</html>
